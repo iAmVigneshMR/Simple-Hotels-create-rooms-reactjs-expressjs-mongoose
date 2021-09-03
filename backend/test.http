@@ -1,0 +1,35 @@
+//to save hotel
+POST http://localhost:5000/hotelApi/savehotel
+Content-Type: application/json
+
+{
+    "hotelName":"yodd", 
+    "roomtype":"tu", 
+    "price":"10", 
+    "from":"10-12-2021", 
+    "to":"14-12-2021"
+}
+
+###
+
+//to edit hotel
+PUT http://localhost:5000/hotelApi/edithotel/6131dca51f69ba2f03dffa51
+Content-Type: application/json
+
+{
+    "hotelName":"yodddfgdfg", 
+    "roomtype":"hhtu", 
+    "price":"101", 
+    "from":"14-11-2020", 
+    "to":"14-12-2021"
+}
+
+###
+
+//to delete hotel
+DELETE http://localhost:5000/hotelApi/deletehotel/6131db88f978d22e98db554a
+Content-Type: application/json
+
+{
+
+}
