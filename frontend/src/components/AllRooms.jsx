@@ -60,18 +60,18 @@ const AllRooms = () => {
             if (searchTerm === "" || searchprice === "" || searchtype === "") {
               return search;
             } 
-            else if(search.hotelName.toLowerCase().includes(searchTerm.toLowerCase())){
+            else if(search.hotelName.toLowerCase().includes(searchTerm.toLowerCase()) || search.price.includes(searchprice) || search.roomtype.toLowerCase().includes(searchtype.toLowerCase())){
               return search;
             }
             // else if (searchprice === "") {
             //   return search;
             // } 
-            else if(search.price.includes(searchprice)){
-              return search;
-            }
-            else if(search.roomtype.toLowerCase().includes(searchtype.toLowerCase())){
-              return search;
-            }
+            // else if(search.price.includes(searchprice)){
+            //   return search;
+            // }
+            // else if(search.roomtype.toLowerCase().includes(searchtype.toLowerCase())){
+            //   return search;
+            // }
           }
         )
         .map((val, i) => 

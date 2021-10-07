@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const routesUrls = require('./routes/routes');
 const cors = require('cors');
 
-//to connect mongoDB
+//to connect mongoDB 
 const localhost = `mongodb+srv://vignesh:task123@task.xexui.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` || "mongodb://localhost:27017/hotel" ;
 mongoose.connect(
     localhost,
